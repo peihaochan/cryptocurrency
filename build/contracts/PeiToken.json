@@ -2,33 +2,66 @@
   "contractName": "PeiToken",
   "abi": [
     {
-      "inputs": [
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
         {
           "internalType": "uint256",
-          "name": "totalSupply",
+          "name": "",
           "type": "uint256"
         }
       ],
       "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "constructor"
+      "stateMutability": "view",
+      "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"totalSupply\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/jchan/Developer/token_sale/contracts/PeiToken.sol\":\"PeiToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/jchan/Developer/token_sale/contracts/PeiToken.sol\":{\"keccak256\":\"0xe6e4277326a51f74faa2aad4df4928e4b2f536c316f0bfd259049da617ec3f4e\",\"urls\":[\"bzz-raw://dec43c2a59cbce71861b02e266af7109034e67f5ba60e46825d1a1aaaafc849a\",\"dweb:/ipfs/QmYHj1YhxMoDVn6pASao1fBvDz7CSuVAi3gggt3rXoi6g7\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b506040516092380380609283398181016040526020811015602f57600080fd5b8101908080519060200190929190505050620186a0905050603e8060546000396000f3fe6080604052600080fdfea265627a7a72315820474ad06c2ea975ddd9328475351d5da76b73eed9972f1328f650e89fb8e8bbea64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820474ad06c2ea975ddd9328475351d5da76b73eed9972f1328f650e89fb8e8bbea64736f6c63430005100032",
-  "sourceMap": "36:108:0:-;;;59:80;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:80:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;59:80:0;;;;;;;;;;;;;;;;125:6;111:20;;59:80;36:108;;;;;;",
-  "deployedSourceMap": "36:108:0:-;;;;;",
-  "source": "pragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract PeiToken {\r\n\r\nconstructor (uint256 totalSupply) public {\r\n        totalSupply = 100000;\r\n    }\r\n\r\n}\r\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/jchan/Developer/token_sale/contracts/PeiToken.sol\":\"PeiToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/jchan/Developer/token_sale/contracts/PeiToken.sol\":{\"keccak256\":\"0xb3b3725bee2372725f21d29ae0b6f9480808a387e032d46a07557f0e460c38c1\",\"urls\":[\"bzz-raw://3f8f78fbd0d00ebee40c565ecafdda0a26ada0d02c0028c6d246a8a00f9e0ac2\",\"dweb:/ipfs/QmZfpJ4PH3rPY3zZ72fYqV5PeU6dQmp9CC4BQHdrwNRE2Y\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280600981526020017f50656920546f6b656e00000000000000000000000000000000000000000000008152506000908051906020019061004f9291906100b5565b506040518060400160405280600381526020017f50454900000000000000000000000000000000000000000000000000000000008152506001908051906020019061009b9291906100b5565b50620f42406002553480156100af57600080fd5b5061015a565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100f657805160ff1916838001178555610124565b82800160010185558215610124579182015b82811115610123578251825591602001919060010190610108565b5b5090506101319190610135565b5090565b61015791905b8082111561015357600081600090555060010161013b565b5090565b90565b6102e1806101696000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806306fdde031461004657806318160ddd146100c957806395d89b41146100e7575b600080fd5b61004e61016a565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561008e578082015181840152602081019050610073565b50505050905090810190601f1680156100bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100d1610208565b6040518082815260200191505060405180910390f35b6100ef61020e565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561012f578082015181840152602081019050610114565b50505050905090810190601f16801561015c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102005780601f106101d557610100808354040283529160200191610200565b820191906000526020600020905b8154815290600101906020018083116101e357829003601f168201915b505050505081565b60025481565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102a45780601f10610279576101008083540402835291602001916102a4565b820191906000526020600020905b81548152906001019060200180831161028757829003601f168201915b50505050508156fea265627a7a72315820552f34e7f6203e7915b43abb484efdc250a05aea02eefa0a60a75eb09fb3244664736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806306fdde031461004657806318160ddd146100c957806395d89b41146100e7575b600080fd5b61004e61016a565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561008e578082015181840152602081019050610073565b50505050905090810190601f1680156100bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100d1610208565b6040518082815260200191505060405180910390f35b6100ef61020e565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561012f578082015181840152602081019050610114565b50505050905090810190601f16801561015c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102005780601f106101d557610100808354040283529160200191610200565b820191906000526020600020905b8154815290600101906020018083116101e357829003601f168201915b505050505081565b60025481565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102a45780601f10610279576101008083540402835291602001916102a4565b820191906000526020600020905b81548152906001019060200180831161028757829003601f168201915b50505050508156fea265627a7a72315820552f34e7f6203e7915b43abb484efdc250a05aea02eefa0a60a75eb09fb3244664736f6c63430005100032",
+  "sourceMap": "36:145:0:-;;;63:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;102:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;166:7;137:36;;36:145;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:145:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "36:145:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:145:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;63:32;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;63:32:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;137:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;102:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;102:28:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;63:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;137:36::-;;;;:::o;102:28::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract PeiToken {\r\n\r\n    string public name = \"Pei Token\";\r\n    string public symbol = \"PEI\";\r\n    uint256 public totalSupply = 1000000;\r\n\r\n\r\n}\r\n",
   "sourcePath": "C:/Users/jchan/Developer/token_sale/contracts/PeiToken.sol",
   "ast": {
     "absolutePath": "/C/Users/jchan/Developer/token_sale/contracts/PeiToken.sol",
     "exportedSymbols": {
       "PeiToken": [
-        12
+        11
       ]
     },
-    "id": 13,
+    "id": 12,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -51,137 +84,155 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 12,
+        "id": 11,
         "linearizedBaseContracts": [
-          12
+          11
         ],
         "name": "PeiToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "body": {
-              "id": 10,
-              "nodeType": "Block",
-              "src": "100:39:0",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 8,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 6,
-                      "name": "totalSupply",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 3,
-                      "src": "111:11:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "313030303030",
-                      "id": 7,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "125:6:0",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_rational_100000_by_1",
-                        "typeString": "int_const 100000"
-                      },
-                      "value": "100000"
-                    },
-                    "src": "111:20:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "id": 9,
-                  "nodeType": "ExpressionStatement",
-                  "src": "111:20:0"
-                }
-              ]
+            "constant": false,
+            "id": 4,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 11,
+            "src": "63:32:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
             },
-            "documentation": null,
-            "id": 11,
-            "implemented": true,
-            "kind": "constructor",
-            "modifiers": [],
-            "name": "",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 3,
-                  "name": "totalSupply",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 11,
-                  "src": "72:19:0",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 2,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "72:7:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "71:21:0"
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "63:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
             },
-            "returnParameters": {
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "50656920546f6b656e",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "84:11:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_4cefd56a6931181c658a7e1edc47e8b4bef93f065c28e3434824cad9f598b664",
+                "typeString": "literal_string \"Pei Token\""
+              },
+              "value": "Pei Token"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 7,
+            "name": "symbol",
+            "nodeType": "VariableDeclaration",
+            "scope": 11,
+            "src": "102:28:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
               "id": 5,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "100:0:0"
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "102:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
             },
-            "scope": 12,
-            "src": "59:80:0",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "504549",
+              "id": 6,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "125:5:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_c0370c90d08b34b21505a1ab919070df9072881d179963c7da5239c7add73387",
+                "typeString": "literal_string \"PEI\""
+              },
+              "value": "PEI"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "totalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 11,
+            "src": "137:36:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 8,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "137:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "31303030303030",
+              "id": 9,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "166:7:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000000_by_1",
+                "typeString": "int_const 1000000"
+              },
+              "value": "1000000"
+            },
             "visibility": "public"
           }
         ],
-        "scope": 13,
-        "src": "36:108:0"
+        "scope": 12,
+        "src": "36:145:0"
       }
     ],
-    "src": "0:146:0"
+    "src": "0:183:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/C/Users/jchan/Developer/token_sale/contracts/PeiToken.sol",
       "exportedSymbols": {
         "PeiToken": [
-          12
+          11
         ]
       }
     },
@@ -214,147 +265,147 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            12
+            11
           ],
           "name": "PeiToken",
-          "scope": 13
+          "scope": 12
         },
         "children": [
           {
             "attributes": {
-              "documentation": null,
-              "implemented": true,
-              "isConstructor": true,
-              "kind": "constructor",
-              "modifiers": [
-                null
-              ],
-              "name": "",
-              "scope": 12,
-              "stateMutability": "nonpayable",
-              "superFunction": null,
+              "constant": false,
+              "name": "name",
+              "scope": 11,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
               "visibility": "public"
             },
             "children": [
               {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "totalSupply",
-                      "scope": 11,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "uint256",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "uint256",
-                          "type": "uint256"
-                        },
-                        "id": 2,
-                        "name": "ElementaryTypeName",
-                        "src": "72:7:0"
-                      }
-                    ],
-                    "id": 3,
-                    "name": "VariableDeclaration",
-                    "src": "72:19:0"
-                  }
-                ],
-                "id": 4,
-                "name": "ParameterList",
-                "src": "71:21:0"
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "63:6:0"
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "argumentTypes": null,
+                  "hexvalue": "50656920546f6b656e",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"Pei Token\"",
+                  "value": "Pei Token"
                 },
-                "children": [],
-                "id": 5,
-                "name": "ParameterList",
-                "src": "100:0:0"
-              },
-              {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "=",
-                          "type": "uint256"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 3,
-                              "type": "uint256",
-                              "value": "totalSupply"
-                            },
-                            "id": 6,
-                            "name": "Identifier",
-                            "src": "111:11:0"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "313030303030",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "number",
-                              "type": "int_const 100000",
-                              "value": "100000"
-                            },
-                            "id": 7,
-                            "name": "Literal",
-                            "src": "125:6:0"
-                          }
-                        ],
-                        "id": 8,
-                        "name": "Assignment",
-                        "src": "111:20:0"
-                      }
-                    ],
-                    "id": 9,
-                    "name": "ExpressionStatement",
-                    "src": "111:20:0"
-                  }
-                ],
-                "id": 10,
-                "name": "Block",
-                "src": "100:39:0"
+                "id": 3,
+                "name": "Literal",
+                "src": "84:11:0"
               }
             ],
-            "id": 11,
-            "name": "FunctionDefinition",
-            "src": "59:80:0"
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "63:32:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "symbol",
+              "scope": 11,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "102:6:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "504549",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"PEI\"",
+                  "value": "PEI"
+                },
+                "id": 6,
+                "name": "Literal",
+                "src": "125:5:0"
+              }
+            ],
+            "id": 7,
+            "name": "VariableDeclaration",
+            "src": "102:28:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "totalSupply",
+              "scope": 11,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 8,
+                "name": "ElementaryTypeName",
+                "src": "137:7:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31303030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1000000",
+                  "value": "1000000"
+                },
+                "id": 9,
+                "name": "Literal",
+                "src": "166:7:0"
+              }
+            ],
+            "id": 10,
+            "name": "VariableDeclaration",
+            "src": "137:36:0"
           }
         ],
-        "id": 12,
+        "id": 11,
         "name": "ContractDefinition",
-        "src": "36:108:0"
+        "src": "36:145:0"
       }
     ],
-    "id": 13,
+    "id": 12,
     "name": "SourceUnit",
-    "src": "0:146:0"
+    "src": "0:183:0"
   },
   "compiler": {
     "name": "solc",
@@ -369,7 +420,7 @@
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-21T22:06:30.911Z",
+  "updatedAt": "2021-03-21T23:24:33.364Z",
   "devdoc": {
     "methods": {}
   },

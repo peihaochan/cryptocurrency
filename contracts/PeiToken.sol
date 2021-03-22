@@ -4,7 +4,7 @@ contract PeiToken {
 
     string public name = "Pei Token";
     string public symbol = "PEI";
-    string public totalSupply = 1000000;
+    uint256 public totalSupply = 1000000;
 
 
 }
